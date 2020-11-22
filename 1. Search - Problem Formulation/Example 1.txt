@@ -1,0 +1,36 @@
+Question: There are six glass boxes in a row, each with a lock. Each of the first five boxes holds a key
+unlocking the next box in line; the last box holds a banana. You have the key to the first box, and
+you want the banana.
+Give a complete problem formulation for the same.
+
+Answer: 
+
+State Space
+No of states = 7 * 2 = 14
+
+{
+“All six boxes are locked”,
+“First box is unlocked. Remaining five boxes are locked”,
+“First two boxes are unlocked. Remaining four boxes are locked”,
+“First three boxes are unlocked. Remaining three boxes are locked”,
+“First four boxes are unlocked. Remaining two boxes are locked”,
+“First five boxes are unlocked. Remaining one box is locked”,
+“All six boxes are unlocked”
+}
+
+{
+“I don’t have the banana”,
+“I have the banana”
+}
+
+Successor function
+    Actions:
+        - Unlock a locked box
+        - Pick an item from one of the open boxes
+    Cost: Number of actions performed
+
+Start State 
+“All six boxes are locked” and “I don’t have the banana”
+
+Goal Test 
+Are “All six boxes are unlocked” and “I have the banana”?

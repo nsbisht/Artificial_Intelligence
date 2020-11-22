@@ -1,0 +1,28 @@
+Question: Three missionaries and three cannibals are on one side of a river, along with a boat that can hold one or two people. Find a way to get everyone to the other side without ever leaving a group of missionaries in one place outnumbered by the cannibals in that place. This problem is famous in AI because it was the subject of the first paper that approached problem formulation from an analytical viewpoint (Amarel, 1968).
+
+Formulate the problem precisely, making only those distinctions necessary to ensure a valid solution. 
+
+Answer: 
+
+State Space: It includes all possible states (triples) at the initial side of the river possible with given
+constraints.
+triple (#missionaries, #cannibals, #boat)
+where,
+0 ≤ #missionaries ≤ 3
+0 ≤ #cannibals ≤ 3
+0 ≤ #boat ≤ 1
+
+Successor function:
+    Actions:
+       - Boat takes 1 missionary across river
+       - Boat takes 1 cannibal across the river
+       - Boat takes 2 missionaries across the river
+       - Boat takes 2 cannibals across the river
+       - Boat takes 1 missionary and 1 cannibal across the river
+       Additionally, we need to ensure #cannibals ≤ #missionaries.
+       
+    Cost: Number of actions performed
+    
+Start State: (3, 3, 1)
+
+Goal Test: Is state (0, 0, 0)?

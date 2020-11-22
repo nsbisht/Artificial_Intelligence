@@ -1,2 +1,7 @@
 # Artificial_Intelligence
-Python implementations for all popular algorithms used in artificial intelligence
+
+1. Problem Formulation
+2. Search
+
+Note: The programming language used for all examples is Python.
+

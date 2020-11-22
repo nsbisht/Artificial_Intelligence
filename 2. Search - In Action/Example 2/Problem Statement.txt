@@ -1,0 +1,5 @@
+You start with the sequence ABABAECCEC, or in general any sequence made from A,B, C, and E. You can transform this sequence using the following equalities: AC = E,AB = BC, BB = E, CC = E, and E x = x for any x. For example, ABBC can be transformed into AEC, and then AC, and then E.
+
+Your goal is to produce the sequence E.
+
+Define an admissible heuristic for the problem and write an A* algorithm to solve the problem.

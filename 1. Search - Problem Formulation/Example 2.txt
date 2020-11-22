@@ -1,0 +1,25 @@
+Question: You start with the sequence ABABAECCEC, or in general any sequence made from A, B, C, and
+E. You can transform this sequence using the following equalities: AC = E, AB = BC, BB = E, and E x
+= x for any x. For example, ABBC can be transformed into AEC, and then AC, and then E. Your goal
+is to produce the sequence E.
+Give a complete problem formulation for the same.
+
+Answer:
+
+State Space
+The set of all possible sequences made from A, B, C, and E.
+
+Successor function
+    Actions:
+        Each possible transformation corresponds to an action.
+        - AC = E,
+        - AB = BC,
+        - BB = E, and
+        - E x = x for any x
+    Cost: Number of actions (transformations) performed
+    
+Start State
+ABABAECCEC or in general any sequence made from A, B, C, and E
+
+Goal Test
+Is the sequence E?
