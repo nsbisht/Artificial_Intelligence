@@ -2,6 +2,7 @@ Question: You start with the sequence ABABAECCEC, or in general any sequence mad
 E. You can transform this sequence using the following equalities: AC = E, AB = BC, BB = E, and E x
 = x for any x. For example, ABBC can be transformed into AEC, and then AC, and then E. Your goal
 is to produce the sequence E.
+
 Give a complete problem formulation for the same.
 
 Answer:
